@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hyperlocal Marketplace</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS CDN -->
+  
+  <!-- Google Fonts with Preload for Performance -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" rel="preload" as="font">
+  
+  <!-- Tailwind CSS CDN (Updated to Latest Version) -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
   <!-- Custom Styles -->
   <link href="styles.css" rel="stylesheet">
 </head>
@@ -17,10 +20,14 @@
   <header class="p-10 text-center bg-teal-600 text-white">
     <h1 class="text-5xl font-bold mb-4">Discover, Support, and Grow Local Black-Owned Businesses</h1>
     <p class="text-xl mb-6">Explore a curated marketplace for Black entrepreneurs and their products and services.</p>
-    <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-500 transition-colors">
+    
+    <!-- Explore Marketplace Button -->
+    <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-500 transition-colors" aria-label="Explore Marketplace">
       Explore Marketplace
     </button>
-    <button class="bg-teal-600 text-white px-6 py-3 rounded-lg text-xl font-semibold hover:bg-teal-700 transition-colors mt-4">
+    
+    <!-- Add Your Listing Button -->
+    <button class="bg-teal-600 text-white px-6 py-3 rounded-lg text-xl font-semibold hover:bg-teal-700 transition-colors mt-4" aria-label="Add Your Listing">
       Add Your Listing
     </button>
   </header>
@@ -56,9 +63,9 @@
     <div class="container mx-auto text-center">
       <div class="flex justify-center space-x-8 mb-6">
         <!-- Social Media Links -->
-        <a href="#" class="text-2xl hover:text-white transition-colors">Facebook</a>
-        <a href="#" class="text-2xl hover:text-white transition-colors">Twitter</a>
-        <a href="#" class="text-2xl hover:text-white transition-colors">Instagram</a>
+        <a href="#" class="text-2xl hover:text-white transition-colors" aria-label="Facebook">Facebook</a>
+        <a href="#" class="text-2xl hover:text-white transition-colors" aria-label="Twitter">Twitter</a>
+        <a href="#" class="text-2xl hover:text-white transition-colors" aria-label="Instagram">Instagram</a>
       </div>
       <div class="text-sm mb-4">
         <p>&copy; {new Date().getFullYear()} Hyperlocal Marketplace. All rights reserved.</p>

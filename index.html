@@ -4,19 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hyperlocal Marketplace - Discover, support, and grow Black-owned businesses.">
+  <meta name="keywords" content="Black-owned, local businesses, marketplace, community">
   <title>Hyperlocal Marketplace</title>
   <!-- Google Fonts for 'Inter' font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <!-- Tailwind CSS CDN Link -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Your Custom Styles (optional) -->
+  <!-- Custom Styles (optional) -->
   <link href="styles.css" rel="stylesheet">
 </head>
 
 <body class="bg-teal-600 text-white">
 
   <!-- Hero Section -->
-  <header class="p-10 text-center bg-teal-600 text-white" style="background-image: url('https://via.placeholder.com/1500'); background-size: cover;">
+  <header class="p-10 text-center bg-teal-600 text-white bg-cover" style="background-image: url('https://via.placeholder.com/1500');">
     <h1 class="text-5xl font-bold mb-4">Discover, Support, and Grow Local Black-Owned Businesses</h1>
     <p class="text-xl mb-6">Explore a curated marketplace for Black entrepreneurs and their products and services.</p>
     <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-500 transition-colors">
@@ -32,7 +34,7 @@
     <h2 class="text-3xl font-semibold text-center mb-6">Meet Our Entrepreneurs</h2>
     <div class="flex overflow-x-auto space-x-8">
       <div class="w-64 p-4 bg-gray-100 rounded-lg shadow-md">
-        <img src="https://via.placeholder.com/150" alt="Entrepreneur 1" class="w-full h-40 object-cover rounded-md mb-4" />
+        <img src="https://via.placeholder.com/150" alt="John Doe - Local Art Entrepreneur" class="w-full h-40 object-cover rounded-md mb-4" />
         <p class="font-semibold">John Doe</p>
         <p class="text-gray-600">"Our mission is to empower the community through handmade art." <span class="text-teal-600">Read More</span></p>
       </div>
@@ -53,92 +55,26 @@
     </div>
   </section>
 
-  <!-- Featured Local Deals Section -->
-  <section class="p-10 bg-yellow-400 text-gray-800">
-    <h2 class="text-3xl font-semibold text-center mb-6">Featured Local Deals</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="border p-6 rounded-lg shadow-md bg-white">
-        <h3 class="font-semibold text-xl mb-2">10% Off All Products</h3>
-        <p class="text-gray-600 mb-2">Get 10% off your first purchase from any Black-owned business on the marketplace.</p>
-        <button class="bg-teal-600 text-white px-6 py-3 rounded-lg text-xl font-semibold hover:bg-teal-700 transition-colors">
-          Shop Now
-        </button>
-      </div>
-      <!-- Repeat for other discounts -->
-    </div>
-  </section>
-
-  <!-- Search Bar Section -->
-  <section class="p-10 bg-teal-600 text-white">
-    <h2 class="text-3xl font-semibold text-center mb-6">Search the Marketplace</h2>
-    <div class="max-w-lg mx-auto">
-      <input type="text" class="w-full p-4 rounded-lg text-lg border-none focus:outline-none focus:ring-2 focus:ring-yellow-400"
-        placeholder="Search for products, businesses, or events..." />
-      <div class="mt-4 flex justify-between">
-        <select class="p-2 rounded-md">
-          <option>By Location</option>
-          <option>New York</option>
-          <option>Los Angeles</option>
-        </select>
-        <select class="p-2 rounded-md">
-          <option>By Product/Service</option>
-          <option>Food</option>
-          <option>Clothing</option>
-        </select>
-        <select class="p-2 rounded-md">
-          <option>By Business Type</option>
-          <option>Black Women-Owned</option>
-          <option>Vegan</option>
-        </select>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <section class="p-10 bg-white text-gray-800">
-    <h2 class="text-3xl font-semibold text-center mb-6">What Our Users Are Saying</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="border p-6 rounded-lg shadow-md bg-gray-100">
-        <p>"This marketplace has completely changed the way I shop. I love supporting local businesses!"</p>
-        <div class="flex items-center mt-4">
-          <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
-          <p class="ml-4">Sarah, Customer</p>
-        </div>
-      </div>
-      <!-- Repeat for other testimonials -->
-    </div>
-  </section>
-
-  <!-- Community Rewards Section -->
-  <section class="p-10 bg-teal-600 text-white">
-    <h2 class="text-3xl font-semibold text-center mb-6">Earn Rewards for Shopping Local</h2>
-    <p class="text-lg mb-6 text-center">Shop at Black-owned businesses and earn points for exclusive rewards! Every purchase helps your community grow.</p>
-    <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-500 transition-colors">
-      Learn More
-    </button>
-  </section>
-
   <!-- Footer Section -->
   <footer class="bg-teal-800 text-yellow-300 p-8 mt-10">
     <div class="container mx-auto text-center">
-      <div class="flex justify-center space-x-8 mb-6">
+      <nav class="flex justify-center space-x-8 mb-6">
         <a href="#" class="text-2xl hover:text-white transition-colors">Facebook</a>
         <a href="#" class="text-2xl hover:text-white transition-colors">Twitter</a>
         <a href="#" class="text-2xl hover:text-white transition-colors">Instagram</a>
-      </div>
-      <div class="text-sm mb-4">
+      </nav>
+      <address class="text-sm mb-4">
         <p>&copy; {new Date().getFullYear()} Hyperlocal Marketplace. All rights reserved.</p>
         <p>
           <a href="/privacy-policy" class="hover:underline">Privacy Policy</a> | 
           <a href="/terms-of-service" class="hover:underline">Terms of Service</a>
         </p>
-      </div>
-      <div class="text-sm">
         <p>Contact us: <a href="mailto:info@hyperlocalmarketplace.com" class="hover:underline">info@hyperlocalmarketplace.com</a></p>
-      </div>
+      </address>
     </div>
   </footer>
 
 </body>
 
 </html>
+

@@ -1,20 +1,45 @@
-/* Tailwind CSS Import */
+/* ----------------------------------------------------
+   Global Imports and Configuration (Best Practice)
+---------------------------------------------------- */
+
+/* Import Custom Font FIRST to ensure it loads before Tailwind base styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* Tailwind Layers */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+/* ----------------------------------------------------
+   Global Styles and Typography Tweaks
+---------------------------------------------------- */
 
-/* Global Styles */
+html {
+  box-sizing: border-box; /* Ensures predictable box model */
+  font-size: 16px; /* Base font size for scaling */
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Inter', sans-serif;
+  line-height: 1.6; /* Global readability */
+  color: #111827; /* Optional: better default text color */
+  background-color: #ffffff; /* Optional: ensures contrast if no Tailwind bg set */
 }
 
+/* Headings */
 h1, h2, h3, h4 {
   font-weight: 600;
+  margin-bottom: 0.5em;
+  line-height: 1.25; /* Improved heading spacing */
 }
 
+/* Paragraphs and Lists */
 p, li {
+  font-weight: 400;
   line-height: 1.6;
+  margin-bottom: 1em; /* Improves flow between blocks */
 }

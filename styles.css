@@ -1,45 +1,67 @@
-/* ----------------------------------------------------
-   Global Imports and Configuration (Best Practice)
----------------------------------------------------- */
-
-/* Import Custom Font FIRST to ensure it loads before Tailwind base styles */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-/* Tailwind Layers */
+/* Tailwind Directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ----------------------------------------------------
-   Global Styles and Typography Tweaks
----------------------------------------------------- */
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
-html {
-  box-sizing: border-box; /* Ensures predictable box model */
-  font-size: 16px; /* Base font size for scaling */
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
+/* Global Typography */
 body {
   font-family: 'Inter', sans-serif;
-  line-height: 1.6; /* Global readability */
-  color: #111827; /* Optional: better default text color */
-  background-color: #ffffff; /* Optional: ensures contrast if no Tailwind bg set */
+  line-height: 1.6; /* Better readability */
 }
 
 /* Headings */
 h1, h2, h3, h4 {
   font-weight: 600;
-  margin-bottom: 0.5em;
-  line-height: 1.25; /* Improved heading spacing */
 }
 
-/* Paragraphs and Lists */
-p, li {
-  font-weight: 400;
-  line-height: 1.6;
-  margin-bottom: 1em; /* Improves flow between blocks */
+/* Buttons */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  outline: none;
 }
+
+/* Hover + Focus for accessibility */
+button:hover,
+button:focus {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.05); /* subtle feedback */
+}
+
+/* Card Component */
+.card {
+  @apply rounded-2xl shadow-lg p-6 bg-white transition-transform;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Headings inside components */
+.text-heading {
+  @apply font-semibold text-xl text-gray-900;
+}
+
+.text-subheading {
+  @apply font-normal text-base text-gray-600;
+}
+
+/* Hero Section */
+.hero-section {
+  @apply bg-cover bg-center text-center py-24;
+  background-image: url('https://via.placeholder.com/1500');
+}
+
+.hero-section h1 {
+  @apply text-5xl text-white font-bold;
+}
+
+/* Responsive Padding for Card */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+}
+

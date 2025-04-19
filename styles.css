@@ -1,19 +1,57 @@
-/* Basic styles to test if styles.css is applied */
-
+/* Global Styles */
 body {
-  background-color: #f0f0f0; /* Light background color */
+  background-color: #e0f2f1; /* Light teal background for a soft yet engaging feel */
   font-family: 'Inter', sans-serif; /* Ensure the font is applied */
+  line-height: 1.6; /* Improve readability */
+}
+
+h1, h2, h3, h4 {
+  font-weight: 600; /* Bold heading text for emphasis */
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3rem; /* Larger font size for headings */
   color: #00796B; /* Teal color for headings */
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #00796B;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #00796B;
+  margin-bottom: 0.75rem;
 }
 
 button {
   background-color: #FBC02D; /* Yellow button background */
   color: #000;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px 24px; /* Larger padding for better user interaction */
+  font-size: 1.125rem; /* Slightly larger text for readability */
+  border-radius: 8px; /* Rounded button corners */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
 }
+
+button:hover {
+  background-color: #FFB300; /* Slightly darker yellow for hover */
+  transform: scale(1.05); /* Slight button enlargement on hover */
+}
+
+button:focus {
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add shadow effect on focus */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
 

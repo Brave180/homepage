@@ -16,7 +16,7 @@
   <link href="styles.css?v=1" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-teal-600 text-white">
 
   <!-- Hero Section -->
   <header class="p-10 text-center bg-teal-600 text-white" style="background-image: url('https://via.placeholder.com/1500'); background-size: cover;">
@@ -30,6 +30,54 @@
     </button>
   </header>
 
+  <!-- Search Bar with Filters Section -->
+  <section class="p-10 bg-teal-600 text-white">
+    <h2 class="text-3xl font-semibold text-center mb-6">Search the Marketplace</h2>
+    <div class="max-w-lg mx-auto">
+      <input type="text" class="w-full p-4 rounded-lg text-lg border-none focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        placeholder="Search for products, businesses, or events..." />
+      <div class="mt-4 flex justify-between">
+        <select class="p-2 rounded-md">
+          <option>By Location</option>
+          <option>New York</option>
+          <option>Los Angeles</option>
+        </select>
+        <select class="p-2 rounded-md">
+          <option>By Product/Service</option>
+          <option>Food</option>
+          <option>Clothing</option>
+        </select>
+        <select class="p-2 rounded-md">
+          <option>By Business Type</option>
+          <option>Black Women-Owned</option>
+          <option>Vegan</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Local Deals Section -->
+  <section class="p-10 bg-yellow-400 text-gray-800">
+    <h2 class="text-3xl font-semibold text-center mb-6">Featured Local Deals</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="border p-6 rounded-lg shadow-md bg-white">
+        <h3 class="font-semibold text-xl mb-2">10% Off All Products</h3>
+        <p class="text-gray-600 mb-2">Get 10% off your first purchase from any Black-owned business on the marketplace.</p>
+        <button class="bg-teal-600 text-white px-6 py-3 rounded-lg text-xl font-semibold hover:bg-teal-700 transition-colors">
+          Shop Now
+        </button>
+      </div>
+      <div class="border p-6 rounded-lg shadow-md bg-white">
+        <h3 class="font-semibold text-xl mb-2">Buy One, Get One Free</h3>
+        <p class="text-gray-600 mb-2">Buy one item, get another free from local artisan stores. Limited time offer!</p>
+        <button class="bg-teal-600 text-white px-6 py-3 rounded-lg text-xl font-semibold hover:bg-teal-700 transition-colors">
+          Shop Now
+        </button>
+      </div>
+      <!-- Add more deals -->
+    </div>
+  </section>
+
   <!-- Featured Entrepreneurs Section -->
   <section class="p-10 bg-white text-gray-800">
     <h2 class="text-3xl font-semibold text-center mb-6">Meet Our Entrepreneurs</h2>
@@ -39,6 +87,12 @@
         <p class="font-semibold">John Doe</p>
         <p class="text-gray-600">"Our mission is to empower the community through handmade art." <span class="text-teal-600">Read More</span></p>
       </div>
+      <div class="w-64 p-4 bg-gray-100 rounded-lg shadow-md">
+        <img src="https://via.placeholder.com/150" alt="Entrepreneur 2" class="w-full h-40 object-cover rounded-md mb-4" />
+        <p class="font-semibold">Jane Smith</p>
+        <p class="text-gray-600">"Sustainable, locally-sourced clothing for every occasion." <span class="text-teal-600">Read More</span></p>
+      </div>
+      <!-- Add more entrepreneur cards -->
     </div>
   </section>
 
@@ -51,7 +105,32 @@
         <p class="text-gray-600 mb-2">Join us for a local artisan market featuring handmade goods from Black-owned businesses.</p>
         <p class="text-sm text-gray-500">Date: May 1, 2025 | Location: Downtown</p>
       </div>
+      <!-- Add more events -->
     </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="p-10 bg-white text-gray-800">
+    <h2 class="text-3xl font-semibold text-center mb-6">What Our Users Are Saying</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="border p-6 rounded-lg shadow-md bg-gray-100">
+        <p>"This marketplace has completely changed the way I shop. I love supporting local businesses!"</p>
+        <div class="flex items-center mt-4">
+          <div class="text-yellow-500">⭐⭐⭐⭐⭐</div>
+          <p class="ml-4">Sarah, Customer</p>
+        </div>
+      </div>
+      <!-- Add more testimonials -->
+    </div>
+  </section>
+
+  <!-- Incentives for Community Participation Section -->
+  <section class="p-10 bg-teal-600 text-white">
+    <h2 class="text-3xl font-semibold text-center mb-6">Earn Rewards for Shopping Local</h2>
+    <p class="text-lg mb-6 text-center">Shop at Black-owned businesses and earn points for exclusive rewards! Every purchase helps your community grow.</p>
+    <button class="bg-yellow-400 text-gray-800 px-6 py-3 rounded-lg text-xl font-semibold hover:bg-yellow-500 transition-colors">
+      Learn More
+    </button>
   </section>
 
   <!-- Footer Section -->
@@ -78,5 +157,3 @@
 </body>
 
 </html>
-
-

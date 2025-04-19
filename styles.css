@@ -1,67 +1,19 @@
-/* Tailwind Directives */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Basic styles to test if styles.css is applied */
 
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
-
-/* Global Typography */
 body {
-  font-family: 'Inter', sans-serif;
-  line-height: 1.6; /* Better readability */
+  background-color: #f0f0f0; /* Light background color */
+  font-family: 'Inter', sans-serif; /* Ensure the font is applied */
 }
 
-/* Headings */
-h1, h2, h3, h4 {
-  font-weight: 600;
+h1 {
+  font-size: 3rem;
+  color: #00796B; /* Teal color for headings */
 }
 
-/* Buttons */
 button {
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  outline: none;
-}
-
-/* Hover + Focus for accessibility */
-button:hover,
-button:focus {
-  transform: scale(1.05);
-  background-color: rgba(0, 0, 0, 0.05); /* subtle feedback */
-}
-
-/* Card Component */
-.card {
-  @apply rounded-2xl shadow-lg p-6 bg-white transition-transform;
-}
-.card:hover {
-  transform: translateY(-10px);
-}
-
-/* Headings inside components */
-.text-heading {
-  @apply font-semibold text-xl text-gray-900;
-}
-
-.text-subheading {
-  @apply font-normal text-base text-gray-600;
-}
-
-/* Hero Section */
-.hero-section {
-  @apply bg-cover bg-center text-center py-24;
-  background-image: url('https://via.placeholder.com/1500');
-}
-
-.hero-section h1 {
-  @apply text-5xl text-white font-bold;
-}
-
-/* Responsive Padding for Card */
-@media (max-width: 768px) {
-  .card {
-    padding: 1rem;
-  }
+  background-color: #FBC02D; /* Yellow button background */
+  color: #000;
+  padding: 10px;
+  border-radius: 5px;
 }
 
